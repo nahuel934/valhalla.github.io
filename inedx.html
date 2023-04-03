@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registro de tareas</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h1>Registro de tareas</h1>
+    <form>
+      <label for="nombreTarea">Nombre de la tarea:</label>
+      <input type="text" id="nombreTarea" name="nombreTarea"><br><br>
+      <label for="fechaTarea">Fecha de la tarea:</label>
+      <input type="date" id="fechaTarea" name="fechaTarea"><br><br>
+      <label for="descripcionTarea">Descripción de la tarea:</label><br>
+      <textarea id="descripcionTarea" name="descripcionTarea" rows="5" cols="50"></textarea><br><br>
+      <button type="button" onclick="agregarTarea()">Agregar tarea</button>
+    </form>
+    <table id="tablaTareas">
+      <tr>
+        <th>ID de trabajador</th>
+        <th>Nombre de tarea</th>
+        <th>Fecha de tarea</th>
+        <th>Descripción de tarea</th>
+        <th>Estado de tarea</th>
+      </tr>
+    </table>
+    <script src="main.js"></script>
+  </body>   
+</html>
